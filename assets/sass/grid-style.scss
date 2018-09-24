@@ -5,6 +5,8 @@ body {
   text-align: center;
 }
 #content {
+  display: grid;
+  grid-template-columns: 30% 20% 50%;
   max-width: 960px;
   margin: auto;
 }
