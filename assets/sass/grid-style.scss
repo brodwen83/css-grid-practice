@@ -7,10 +7,12 @@ body {
 
 #content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
   max-width: 960px;
   margin: auto;
+  > * {
+    background: #3bbced;
+    padding: 30px;
+  }
 
   div {
     background: #3bbced;
