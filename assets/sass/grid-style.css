@@ -12,6 +12,7 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (minmax(200px, auto))[3];
       grid-template-rows: repeat(3, minmax(200px, auto));
+  grid-gap: 10px;
   max-width: 960px;
   margin: auto;
 }
