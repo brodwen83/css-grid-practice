@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+$mobile: 768px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -14,11 +23,22 @@ body {
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
     "header header header header"
-    "aside aside main main"
-    "nav nav main main"
+    "footer footer footer footer"
+    "main main main main"
+    "main main main main"
+    "aside aside nav nav"
     "section section section section"
-    "section section section section"
-    "footer footer footer footer";
+    "section section section section";
+
+  @include mobile {
+    grid-template-areas:
+      "header header header header"
+      "aside aside main main"
+      "nav nav main main"
+      "section section section section"
+      "section section section section"
+      "footer footer footer footer";
+  }
 
   > * {
     background: #3bbced;
