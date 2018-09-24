@@ -23,4 +23,18 @@ body {
 #content div:nth-child(even) {
   background: #777;
 }
+
+#content .nested {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#content .nested p {
+  border: solid 1px #fff;
+  padding: 20px;
+  margin: 0;
+}
 /*# sourceMappingURL=grid-style.css.map */

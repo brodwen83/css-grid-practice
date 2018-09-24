@@ -20,4 +20,16 @@ body {
   div:nth-child(even) {
     background: #777;
   }
+
+  .nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+    p {
+      border: solid 1px #fff;
+      padding: 20px;
+      margin: 0;
+    }
+  }
 }
