@@ -30,6 +30,7 @@ body {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  grid-column: span 3;
 }
 
 #content .nested p {
