@@ -8,8 +8,8 @@ body {
 #content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 20% 50%;
-      grid-template-columns: 30% 20% 50%;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   max-width: 960px;
   margin: auto;
 }
